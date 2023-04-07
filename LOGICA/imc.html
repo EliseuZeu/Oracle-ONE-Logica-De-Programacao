@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+    function puloLinha(){
+        document.write("<br><hr><br>");
+    }
+    function mostrar(frase){
+        document.write(frase);
+        puloLinha();
+    }
+    function calcularImc(peso, altura){
+        const imc = peso/ (altura * altura);
+        
+        if (imc < 18.5) {
+            mostrar("<div style=font-size:35px;>Seu peso esta abaixo do normal</div>");
+        } 
+        else if ( imc => 18.5 && imc <= 24.99) {
+            mostrar("<div style=font-size:35px;>Seu IMC e " + Math.round(imc) + " Situacao: Peso Normal.</div>");
+        }
+        else if ( imc => 25 && imc <= 29.99) {
+            mostrar("<div style=font-size:35px;>Seu IMC e " + Math.round(imc) + " Situacao: Acima do peso.</div>")
+        }
+        else if ( imc => 30 && imc <= 34.99) {
+            mostrar("<div style=font-size:35px;>Seu IMC e " + Math.round(imc) + " Situacao: Obesidade Nivel 1.</div>");
+        }
+        else if (imc => 35 && imc <= 39.99){
+            mostrar("<div style=font-size:35px;>Seu IMC e " + Math.round(imc) + " Situacao: Obesidade Nivel 2.</div>");
+        } 
+        else {
+            mostrar("<div style=font-size:35px;>Seu IMC e " + Math.round(imc) + " Situacao: Obesidade Nivel 3, Morbida procure um medico.</div>")
+        }
+    }
+
+    let pesoFlavio = prompt("Informe seu peso: ");
+    let alturaFlavio = prompt("Informe sua altura: ");
+
+    calcularImc(pesoFlavio, alturaFlavio);
+
+
+
+</script>
