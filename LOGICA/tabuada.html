@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+    function mostrar(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let contador = 1;
+    let tabuada = parseInt(prompt("Digite a tabuada: "));
+    
+
+   for(let contador = 1; contador <= 10; contador = contador++){
+        mostrar(tabuada + "X" + contador + "=" + (tabuada*contador));
+   }
+</script>
