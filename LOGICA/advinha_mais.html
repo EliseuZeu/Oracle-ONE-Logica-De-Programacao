@@ -1,0 +1,66 @@
+<meta charset="UTF-8">
+
+<style>
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+    }
+    input {
+        width: 50%;
+        height: 40px;
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    button{
+        width: 50%;
+        height: 80px;
+        font-size: 30px;
+        border-radius: 40px;
+        background: linear-gradient(#e66465, #9198e5);;
+        color: rgb(255, 255, 255);
+        border-style: none;            
+    }
+    
+</style>
+
+
+<div>
+    <input/>
+    <button>Compare com meu segredo</button>
+</div>
+
+<script>
+    function pulaLinha(){
+        document.write("<br>>br>");
+    }
+    function mostrar(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let segredo = Math.round(Math.random() * 10);
+    let input = document.querySelector("input");
+    input.focus;
+
+    function verifica() {
+
+        if(input.value == segredo) {
+            alert("Voce acertou");
+        }else {
+            alert("Voce ERROU!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+    let button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+
+
+</script>
