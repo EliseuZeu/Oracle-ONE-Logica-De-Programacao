@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
 
 <script>
+
     function pulaLinha(){
         document.write("<br><br>");
     }
@@ -8,16 +9,18 @@
         document.write(frase);
         pulaLinha();
     }
+    function sorteia() {
+        return Math.round(Math.random() * 100);
+    }
 
-    let numeroPensado = Math.round(Math.random() * 10);
-
-    let chute = parseInt(prompt("Digite seu chute!"));
-
-    if (chute === numeroPensado) {
+    var numeroPensado = sorteia();
+    var chute = parseInt(prompt("Digite seu chute!"));
+    
+    if (chute === numeroPensado ) {
         mostrar("Voce acertou");
     }
     else{
-        mostrar("Voce errou, o numnero pensado foi" + numeroPensado)
+        mostrar("Voce errou, o numnero pensado foi " + numeroPensado)
     }
 
 </script>
