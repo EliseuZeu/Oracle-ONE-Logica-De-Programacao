@@ -12,15 +12,23 @@
     function sorteia() {
         return Math.round(Math.random() * 100);
     }
-
-    var numeroPensado = sorteia();
-    var chute = parseInt(prompt("Digite seu chute!"));
     
-    if (chute === numeroPensado ) {
-        mostrar("Voce acertou");
+    var numeroPensado = sorteia();
+    var tentativas = 1;
+
+    while(tentativas <= 3){
+        var chute = parseInt(prompt("Digite seu chute!"));
+    
+        if (chute === numeroPensado ) {
+            mostrar("Voce acertou");
+            break;
+        }
+        else{
+            mostrar("Voce errou");
+        }
+
+        tentativas++;
     }
-    else{
-        mostrar("Voce errou, o numnero pensado foi " + numeroPensado)
-    }
+   
 
 </script>
