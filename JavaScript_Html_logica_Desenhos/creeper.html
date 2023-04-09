@@ -1,0 +1,39 @@
+<canvas width="600" height="600"></canvas>
+
+
+<script>
+    let tela = document.querySelector("canvas");
+    let pincel = tela.getContext("2d");
+
+    var darkgreen = "darkgreen"; // variaveis da cor Darkgreen
+    var black = "black"; // Variaveis das cor black
+
+
+    pincel.fillStyle = darkgreen;
+    pincel.fillRect(0, 0, 600, 500);
+
+    // olho 1
+    pincel.fillStyle = black;
+    pincel.fillRect(80, 50, 150,150);
+
+    // olho 2
+    pincel.fillStyle = black;
+    pincel.fillRect(370, 50, 150,150);
+
+    // Nariz
+    pincel.fillStyle = black;
+    pincel.fillRect(225, 200, 150,200);
+
+    // 5
+    pincel.fillStyle = black;
+    pincel.fillRect(80, 300, 150, 200);
+
+    // 6
+    pincel.fillStyle = black;
+    pincel.fillRect(370, 300, 150, 200);
+
+    
+
+
+
+</script>
