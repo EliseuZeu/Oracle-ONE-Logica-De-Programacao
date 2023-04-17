@@ -1,0 +1,45 @@
+:root {
+    --color-lightblue: #F3F5FC;
+    --color-darkblue: #0A3871;
+    --color-gray: #343A40;
+    --color-lightgray: #495057;
+    --color-grayblue: #D8DFE8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-lightblue);
+    position: relative;
+}
+
+.campo-recebeTexto {
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    position: absolute;
+    top: 40px;
+    background: white;
+    border-radius: 32px;
+    offset: 0px, 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.botao-azulescuro {
+    background: var(--color-darkblue);
+    color: var(--color-lightblue);
+}
+
+.butao-cinzaescuro {
+    background: var(--color-grayblue);
+    color: var(--color-darkblue);
+}
