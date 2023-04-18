@@ -81,3 +81,15 @@ main {
     font-weight: bold;
     margin-top: 10px;
 }
+
+footer {
+    text-align: center;
+    background: black;
+    padding: 40px 0;
+}
+
+.copyritht {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
