@@ -33,10 +33,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    display: block;
-}
-
 .produtos{
     width: 940px;
     margin: 0 auto;
@@ -65,11 +61,6 @@ main {
 
 .produtos li:hover h2 {
     font-size: 34px;
-}
-
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .produto-descricao {
@@ -103,7 +94,7 @@ form {
     margin:  40px 0;
 }
 
-form label, form p {
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -118,4 +109,42 @@ form label, form p {
 
 .checkbox {
     margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px ;
+}
+
+tfoot td{
+    background: #555555;
+    color: white;
+    text-align: center;
 }
