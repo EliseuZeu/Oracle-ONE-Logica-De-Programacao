@@ -210,17 +210,29 @@ tfoot td{
     font-weight: bold;
 }
 
+.itens::before {
+    content: "★";
+}
+
 .imagem-beneficios {
     width: 60%;
+    box-shadow: 10px 10px 20px #000000;
 }
 
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FFFFFF,#888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
     margin: 0 0 2em;
     text-align: center;
+   
 }
 
 .video {
