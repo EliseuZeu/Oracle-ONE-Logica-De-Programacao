@@ -242,5 +242,29 @@ tfoot td{
 
 
 @media screen and (max-width: 480px) {
-    
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos{
+        width: auto;
+    }
+   
+    .produtos li {
+        display: block;
+        width: auto;
+        margin: 30px;
+    }
+
+    .produtos li:hover h2 {
+        font-size: 34px;
+    }
+
+    h1, h2, nav {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
