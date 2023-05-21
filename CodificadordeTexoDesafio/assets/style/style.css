@@ -83,6 +83,16 @@ textarea {
     border-radius: 10pxpx;
 }
 
+.textarea::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; 
+    border: none; 
+}
+
+textarea:focus, input:focus, select:focus, output:focus {
+    outline: 0;
+}
+
 .input-text {
     display: flex;
     flex-direction: row;
@@ -103,6 +113,7 @@ textarea {
     row-gap: 50px;
 }
 
+
 .img-output {
     height: 300px;
     width: 370px;
@@ -115,7 +126,18 @@ textarea {
     row-gap: 20px;
 }
 
-.button{
+#output textarea{
+    background: transparent;
+    font-size: 32px; 
+    border: none; 
+    height: 70%;
+    width: 80%;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.buttons{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -138,6 +160,11 @@ textarea {
     transition: 0.8s ease-in-out;
 }
 
+.botao-a.botao-azulescuro{
+    background-color:  var(--color-darkblue);
+    transform: scale(1.15);  
+}
+
 .butao-cinzaescuro {
     background: var(--color-grayblue);
     color: var(--color-darkblue);
@@ -147,6 +174,13 @@ textarea {
     border: none;
     transition: 0.8s ease-in-out;
 }
+
+.botao-cinzaescuro:hover, .btn-copiar:hover {
+    color:#D8DFE8;
+    transform: scale(1.15);  
+}
+
+
 
 footer {
     text-align: center;
