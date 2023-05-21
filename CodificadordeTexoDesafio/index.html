@@ -9,23 +9,45 @@
     <title>Desafio Decodificador</title>
 </head>
 <body>
-    <header id="titulo">
-        <img src="img/Vector.svg" alt="">
+    <header class="cabecalho">
+        <img src="img/logo.png" alt="">
+        <h1 class="titulo-logo">Codificador SuperMario</h1>
     </header>
-
-    <div class="campo-texto">
-
-    </div>
-
-    <div class="campo-recebeTexto">
-        <img src="img/High quality products 1 1.svg" alt="">
-    </div>
     
-    <div class="botao-interativo">
-        <p>Apenas letras minúsculas e sem acento.</p>
-        <button class="botao-azulescuro">Criptografar</button>
-        <button class="butao-cinzaescuro">Descriptografar</button>
-    </div>
+    <main class="main-container">
+        <div class="container-input">
+            <div class="input">
+                <div>
+                    <textarea class="textarea" id="input-area" placeholder="Digite seu texto aqui"></textarea>
+                </div>
+                <div class="input-text">
+                    <img src="" alt="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+            </div>
+        
+            <div class="output" id="output">
+                <div>                    
+                    <img class="img-output" src="img/png-clipart-mario-mario.png" alt="">
+                </div>
+                <div class="text-output">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <span>Digite o texto que deseja criptografar</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="botao-azulescuro" onclick="criptografar()" >Criptografar</button>
+            <button class="butao-cinzaescuro" onclick="descriptografar()">Descriptografar</button>
+        </div>
+    </main>
+    <footer>
+        <p>Desenovlido por Eliseu Souza</p>
+        <div class="links-footer">
+            <a href=""></a>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
