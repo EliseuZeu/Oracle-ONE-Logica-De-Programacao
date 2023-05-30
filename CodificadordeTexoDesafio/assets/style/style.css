@@ -16,7 +16,8 @@
 }
 
 body {
-   background-image: url("/Oracle-ONE-Logica-De-Programacao/CodificadordeTexoDesafio/img/fundo-background.jpg");
+    background-size: auto;
+   background-image: url("/CodificadordeTexoDesafio/img/fundo-background.jpg");
    background-size: cover;
 }
 
